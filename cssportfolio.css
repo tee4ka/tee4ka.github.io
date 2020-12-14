@@ -1,0 +1,158 @@
+* { box-sizing: content-box; }
+body {
+     background:url(https://media.giphy.com/media/3o7WTCCTtKQkKZ91C0/giphy.gif);
+     margin: 0%;
+     }
+.button {
+     display: inline-block;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     font: normal 90px/normal "Warnes", Helvetica, sans-serif;
+     color: rgba(255,255,255,1);
+     text-decoration: normal;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+     -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+     -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+     -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+     }
+
+.button:hover {
+     text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+     }
+.nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     }
+.nav :hover {
+     border: 1px solid rgba(84,22,229,1);
+     -webkit-border-radius: 3px;
+     border-radius: 3px;
+     font: normal 20px/1 "Acme", Helvetica, sans-serif;
+     color: rgba(72,24,114,1);
+     background: none;
+     -webkit-box-shadow: 0 0 9px 4px rgba(18,15,117,0.62) ;
+     box-shadow: 0 0 9px 4px rgba(18,15,117,0.62) ;
+     text-shadow: 1px 1px 1px rgba(227,24,242,0.6) ;
+     }
+.nav a {
+     display: block;
+     text-decoration: none;
+     outline: none;
+     transition: .4s ease-in-out;
+       }
+.topmenu {
+     backface-visibility: hidden;
+     -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+     box-sizing: content-box;
+     width: 110px;
+     left: 2%;
+     }
+.topmenu > li {
+     display: inline-block;
+     position: relative;
+     }
+.topmenu > li > a {
+     font-family: 'Exo 2', sans-serif;
+     height: 70px;
+     line-height: 70px;
+     padding: 0 30px;
+     font-weight: bold;
+     color: #ffffff;
+     text-transform: uppercase;
+     }
+.down:after {
+     margin-left: 8px;
+     }
+.topmenu li a:hover { color: #9632e9; }
+.submenu {
+     background: white;
+     position: absolute;
+     left: 0;
+     visibility: hidden;
+     opacity: 0;
+     z-index: 5;
+     transform: perspective(600px) rotateX(-90deg);
+     transform-origin: 0% 0%;
+     transition: .6s ease-in-out;
+     }
+.topmenu > li:hover .submenu{
+     visibility: visible;
+     opacity: 1;
+     transform: perspective(600px) rotateX(0deg);
+     }
+.submenu li a {
+     color: #8d1dd8;
+     font-size: 13px;
+     line-height: 36px;
+     padding: 0 25px;
+     }
+.demo { 
+     position:absolute; 
+     margin:0 auto;
+     display: block;}
+.demo img {
+     position:absolute;
+}
+.demo img.dva {
+     left: 200px; 
+     top: 200px; 
+}
+.demo img.raz {
+     left: 160px;
+     top: 140px;
+     opacity:0;
+     filter:alpha(opacity=0);}
+.demo:hover img.raz {
+     opacity:1;
+     filter:alpha(opacity=100);}
+.demo:hover img.dva, .demo img.dva:hover {
+     opacity:0;filter:alpha(opacity=0);}
+.demo2 { 
+     position:absolute; 
+     margin:0;
+     display: block}
+.demo2 img {  
+     position:absolute; 
+     top: 200px; }
+.demo2 img.dva {
+     left: 700px;}
+.demo2 img.raz {
+     left: 500px; 
+     opacity:0;
+     filter:alpha(opacity=0);}
+.demo2:hover img.raz {
+     opacity:1;
+     filter:alpha(opacity=100);}
+.demo2:hover img.dva, 
+.demo img.dva:hover {
+     opacity:0;
+     filter:alpha(opacity=0);}
+.demo3 { 
+     position:absolute; 
+     margin:0 auto;
+     display: block;}
+.demo3 img {
+     left: 1200px;
+     position:absolute; }
+.demo3 img.dva {
+     left: 1200px;
+     top: 200px;}
+.demo3 img.raz {
+     top: 120px;
+     left: 1060px;
+     opacity:0;
+     filter:alpha(opacity=0);}
+.demo3:hover img.raz {
+     opacity:1;
+     filter:alpha(opacity=100);}
+.demo3:hover img.dva, 
+.demo3 img.dva:hover {
+     opacity:0;
+     filter:alpha(opacity=0);}
